@@ -15,3 +15,100 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*  */
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.index-panel {
+    color: white;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    left:0;
+	right: 0;
+	padding-top: 10%;
+}
+
+.logo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: transparent;
+    font-size: 3em;
+}
+
+.action-button-section {
+	margin-top: 25px;
+	margin-bottom: 8px;
+	text-align: center;
+	position: relative;
+}
+
+.action-button {
+	background-color: #ff4742;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 0 5px 0 #d1362a;
+	padding: 10px 40px;
+}
+
+.action-button:hover{
+	background-color: #fff;
+	color: #ff4742;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 10px 40px;
+}
+
+#sign-in-link {
+	text-decoration: underline;
+	color: white;
+}
