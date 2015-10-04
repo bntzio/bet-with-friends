@@ -11,8 +11,6 @@
 </head>
 <body>
 
-<%= yield %>
-
 <!-- Flash Messages -->
 <% if flash[:notice] %>
   <div class="alert alert-success">
@@ -31,6 +29,7 @@
   </div>
 <% end %>
 
+<%= yield %>
 
 </body>
 </html>
