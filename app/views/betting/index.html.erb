@@ -1,0 +1,18 @@
+<ul>
+<b>Partidos de hoy (<%= DateTime.now.to_date %>)</b>
+<% if @today_games != nil %>
+    <i>Partidos por jugarse</i>
+    <% @today_games.each do |matches| %>
+        <% if matches["match_localteam_score"] == '?' %>
+            <%=  matches["match_localteam_score"] + " " + matches["match_localteam_name"] + " vs " + matches["match_visitorteam_name"] + " " + matches["match_visitorteam_score"] + " bet with friend" %><br>
+        <% else %>
+            <i>Partidos en curso</i>
+            <%=  matches["match_localteam_score"] + " " + matches["match_localteam_name"] + " vs " + matches["match_visitorteam_name"] + " " + matches["match_visitorteam_score"] %><br>
+        <% end %>
+    <% end %>
+<% else %>
+    No hay partidos programados para hoy :(
+<% end %>
+
+</ul>
+

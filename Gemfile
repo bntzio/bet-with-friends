@@ -27,6 +27,17 @@ gem 'bootstrap-sass'
 # devise for user authentication
 gem 'devise'
 
+# figaro to handle sensitive data
+gem 'figaro', '1.0'
+
+gem 'nokogiri', '~> 1.6.6.2'
+
+gem 'crack'
+
+gem 'pry'
+
+gem 'httparty'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
